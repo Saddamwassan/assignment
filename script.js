@@ -28,21 +28,35 @@
 //         document.write("<br>");
 //     }
 // star 2nd loop *************
-for(var i=1;i<=5;i++){
-    for(var j=1;j<=i;j++){
-        // for(var k=1;k<=1;k++){
-        // document.write(" ");
-        // }
-        document.write("*");
-
-    }
-    document.write("<br>")
- 
-}
-// star 3rd loop**************
 // for(var i=1;i<=5;i++){
 //     for(var j=1;j<=i;j++){
-//     document.write("*");
+//         for(var k=4;k>=1;k--){
+//         document.write(" ");
+//         }
+//         document.write("*");
+
+//     }
+//     document.write("<br>")
+ 
+// }
+// star 3rd loop**************
+// for(var i=1;i<=5;i++){
+//     for(var k=5;k>=i;k--){
+//         document.write("&nbsp ");
+//     }
+//     for(var j=1;j<=i;j++){
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+// diamond 
+// for(var i=1;i<=5;i++){
+//     for(var k=5;k>=i;k--){
+//         document.write("&nbsp ");
+//     }
+//     for(var j=1;j<=i;j++){
+//         document.write("&nbsp ");
+//         document.write("*");
 //     }
 //     document.write("<br>");
 // }
@@ -53,9 +67,9 @@ for(var i=1;i<=5;i++){
 //     }
 //     document.write("<br>");
 // }
-// number triganle **************
+// number triganle 2 **************
 // for(var i=1;i<=5;i++){
-//     for(var j=0;j<=i;j++){
+//     for(var j=1;j<=i;j++){
 //         document.write(j+i);
 //     }
 //     document.write("<br>");
