@@ -1,3 +1,4 @@
+
 // counting *****************
 // for(var i=1;i<=10;i++){
 //     document.write(i);
@@ -68,9 +69,11 @@
 //     document.write("<br>");
 // }
 // number triganle 2 **************
-// for(var i=1;i<=5;i++){
-//     for(var j=1;j<=i;j++){
-//         document.write(j+i);
+// var a=1;
+// for(var i=0;i<=5;i++){
+//     for(var j=0;j<i;j++){
+//         document.write(" &nbsp "+a);
+//         a++;
 //     }
 //     document.write("<br>");
 // }
@@ -131,6 +134,115 @@
 //         document.write(c);
 //     }
 //     mod(25,10);
-       
+// 20jan 2024******************************************
+// min************
+// var a=[22,113,3,1];
+// function min(){
+//   var b=a[0];
+//     for(var i=0;i<a.length;i++){
+//       if(b>a[i]) {
+//          b = a[i];
+//        }
+//     }
+//     document.write(b);
+
+// }
+// min();
+// max with function *************
+// var a=[242,113,233,1000];
+// function max(){
+//   var b=a[0];
+//     for(var i=0;i<a.length;i++){
+//       if(b<a[i]) {
+//          b = a[i];
+//        }
+//     }
+//     document.write(b);
+
+// }
+// max();
+// sort in ascending ****************
+// var a=[2,13,10,1,116];
+// function sort(){
+//   var b = 0;
+//     for(var i=0;i<a.length;i++){
+//       for(var j=0;j<a.length;j++){
+//          if(a[j]>a[j+1]){
+//            b= a[j];
+//             a[j]=a[j+1];
+//             a[j+1] = b;
+//        }
+//        }
+//       }
+//       document.write(a);
+// }
+// sort();
+
+// sort descending **************
+// var a=[2,13,10,1,116];
+// function sort(){
+//   var b = 0;
+//     for(var i=0;i<a.length;i++){
+//       for(var j=0;j<a.length;j++){
+//          if(a[j]<a[j+1]){
+//            b= a[j];
+//             a[j]=a[j+1];
+//             a[j+1] = b;
+//        }
+//        }
+//         document.write(a);
+//         document.write("<br>");
+//       }
+// }
+// sort();
+// reverse array ******************
+// var a=[2,13,110,10,6];
+// function reverse(){
+//   var b = 0;
+//     for(var i=0;i<a.length;i++){
+//       for(var j=a.length-1;j>i;j--){
+//          b= a[j];
+//             a[j]=a[j-1];
+//             a[j-1] = b;
+//        }
+//       }
+//         document.write(a);
+// }
+// reverse();
+// 27/1/2024 
+var target = document.getElementById("heading");
+var a = [10,20,30,40,50];
+var value = 0;
+var next = 0;
+var loop = setInterval(()=>{
+  // forward 
+  if(value < a.length){
+    target.innerHTML = a[value++];
+    next++;
+    console.log("forward"+next);
+  } 
+  // backward 
+  else if(next<=value && next>=0){
+    console.log("backward"+next);
+    var dec = next--;
+    target.innerHTML= a[dec];
+    if(dec == 0){
+      value = 0;
+    }
+  }
+},1000);
+// printing letter from array 
+// let array=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+// for(var i=array.length;i>0;i-=3){
+//   console.log(array[i]);
+// }
+
+
+
+
+
+
+
+        
 
 
