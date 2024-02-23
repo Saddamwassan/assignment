@@ -23,11 +23,6 @@
 //         document.write("<br>");
 //     }
 // }
-// star loop ****************
-// for(var i=1;i<=10;i++){
-//         document.write("*");
-//         document.write("<br>");
-//     }
 // star 2nd loop *************
 // for(var i=1;i<=5;i++){
 //     for(var j=1;j<=i;j++){
@@ -210,32 +205,45 @@
 // }
 // reverse();
 // 27/1/2024 
-var target = document.getElementById("heading");
-var a = [10,20,30,40,50];
-var value = 0;
-var next = 0;
-var loop = setInterval(()=>{
-  // forward 
-  if(value < a.length){
-    target.innerHTML = a[value++];
-    next++;
-    console.log("forward"+next);
-  } 
-  // backward 
-  else if(next<=value && next>=0){
-    console.log("backward"+next);
-    var dec = next--;
-    target.innerHTML= a[dec];
-    if(dec == 0){
-      value = 0;
-    }
-  }
-},1000);
+// var target = document.getElementById("heading");
+// var a = [10,20,30,40,50];
+// var value = 0;
+// var next = 0;
+// var loop = setInterval(()=>{
+//   // forward 
+//   if(value < a.length){
+//     target.innerHTML = a[value++];
+//     next++;
+//     console.log("forward"+next);
+//   } 
+//   // backward 
+//   else if(next<=value && next>=0){
+//     console.log("backward"+next);
+//     var dec = next--;
+//     target.innerHTML= a[dec];
+//     if(dec == 0){
+//       value = 0;
+//     }
+//   }
+// },1000);
 // printing letter from array 
 // let array=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 // for(var i=array.length;i>0;i-=3){
 //   console.log(array[i]);
 // }
+
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#password");
+
+togglePassword.addEventListener("click", function () {
+// toggle the type attribute
+const type = password.getAttribute("type") === "password" ? "text" : "password";
+password.setAttribute("type", type);    
+
+// toggle the eye icon
+this.classList.toggle('fa-eye');
+console.log("hi");
+});
 
 
 
